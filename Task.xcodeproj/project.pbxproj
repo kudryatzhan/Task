@@ -16,6 +16,7 @@
 		B2EBE6201FC8F30C0068BB16 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE61F1FC8F30C0068BB16 /* CoreDataStack.swift */; };
 		B2EBE6241FC8F5610068BB16 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE6221FC8F5610068BB16 /* Task.xcdatamodeld */; };
 		B2EBE6261FC8F6570068BB16 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE6251FC8F6570068BB16 /* Task+Convenience.swift */; };
+		B2EBE6281FC8F8710068BB16 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE6271FC8F8710068BB16 /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B2EBE61F1FC8F30C0068BB16 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B2EBE6231FC8F5610068BB16 /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 		B2EBE6251FC8F6570068BB16 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		B2EBE6271FC8F8710068BB16 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B2EBE60F1FC8F1090068BB16 /* Assets.xcassets */,
 				B2EBE6111FC8F1090068BB16 /* LaunchScreen.storyboard */,
 				B2EBE6141FC8F1090068BB16 /* Info.plist */,
+				B2EBE6291FC8F8770068BB16 /* Model Controllers */,
 				B2EBE61C1FC8F20D0068BB16 /* View Controllers */,
 				B2EBE6211FC8F3110068BB16 /* Core Data */,
 			);
@@ -90,6 +93,14 @@
 				B2EBE6251FC8F6570068BB16 /* Task+Convenience.swift */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		B2EBE6291FC8F8770068BB16 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2EBE6271FC8F8710068BB16 /* TaskController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EBE6281FC8F8710068BB16 /* TaskController.swift in Sources */,
 				B2EBE61B1FC8F2080068BB16 /* TaskListTableViewController.swift in Sources */,
 				B2EBE6091FC8F1080068BB16 /* AppDelegate.swift in Sources */,
 				B2EBE6261FC8F6570068BB16 /* Task+Convenience.swift in Sources */,
