@@ -17,11 +17,13 @@ class TaskDetailTableViewController: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dueDateTextField: UITextField!
     @IBOutlet weak var notesTextView: UITextView!
+    @IBOutlet var dueDatePicker: UIDatePicker!
     
     // MARK: - Actions
-    func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
+        dueDateTextField.inputView = dueDatePicker
         updateViews()
     }
     
@@ -39,6 +41,18 @@ class TaskDetailTableViewController: UITableViewController {
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        dueDateValue = sender.date
+        dueDateTextField.text = sender.date.stringValue()
+    }
+    
+    @IBAction func userTappedView(_ sender: UITapGestureRecognizer) {
+        nameTextField.resignFirstResponder()
+        dueDateTextField.resignFirstResponder()
+        notesTextView.resignFirstResponder()
+    }
+    
     
     // Update views
     func updateViews() {
