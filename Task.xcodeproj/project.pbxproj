@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29418801FCB957500575131 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294187F1FCB957500575131 /* ButtonTableViewCell.swift */; };
 		B2EBE6091FC8F1080068BB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBE6081FC8F1080068BB16 /* AppDelegate.swift */; };
 		B2EBE60E1FC8F1090068BB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EBE60C1FC8F1090068BB16 /* Main.storyboard */; };
 		B2EBE6101FC8F1090068BB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EBE60F1FC8F1090068BB16 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B294187F1FCB957500575131 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		B2EBE6051FC8F1080068BB16 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EBE6081FC8F1080068BB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2EBE60D1FC8F1090068BB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B294187E1FCB955A00575131 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B294187F1FCB957500575131 /* ButtonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B2EBE5FC1FC8F1080068BB16 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 				B2EBE6141FC8F1090068BB16 /* Info.plist */,
 				B2EBE6291FC8F8770068BB16 /* Model Controllers */,
 				B2EBE61C1FC8F20D0068BB16 /* View Controllers */,
+				B294187E1FCB955A00575131 /* Views */,
 				B2EBE6211FC8F3110068BB16 /* Core Data */,
 				B2EBE62C1FCA07220068BB16 /* Extensions */,
 			);
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29418801FCB957500575131 /* ButtonTableViewCell.swift in Sources */,
 				B2EBE6281FC8F8710068BB16 /* TaskController.swift in Sources */,
 				B2EBE61B1FC8F2080068BB16 /* TaskListTableViewController.swift in Sources */,
 				B2EBE6091FC8F1080068BB16 /* AppDelegate.swift in Sources */,
