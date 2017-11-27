@@ -11,7 +11,11 @@ import UIKit
 class TaskDetailTableViewController: UITableViewController {
     
     // MARK: - Properties
-    var task: Task?
+    var task: Task? {
+        didSet {
+            updateViews()
+        }
+    }
     var dueDateValue: Date?
     
     @IBOutlet weak var nameTextField: UITextField!
