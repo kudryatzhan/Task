@@ -45,6 +45,10 @@ class TaskController {
         
     }
     
+    func toggleIsCompleteFor(task: Task) {
+        task.isComplete = !task.isComplete
+    }
+    
     // MARK: - Persistene
     func saveToPersistenceStore() {
         

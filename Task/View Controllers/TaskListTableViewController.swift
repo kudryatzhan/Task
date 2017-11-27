@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TaskListTableViewController: UITableViewController {
+class TaskListTableViewController: UITableViewController, ButtonTableViewCellDelegate {
     
     //MARK: - Lifecycle functions
     
@@ -44,6 +44,7 @@ class TaskListTableViewController: UITableViewController {
         
         // Configure the cell...
         cell.update(withTask: task)
+        cell.delegate = self
         
         return cell
     }
@@ -76,5 +77,12 @@ class TaskListTableViewController: UITableViewController {
                 destinationVC.dueDateValue = task.due
             }
         }
+    }
+    
+    // ButtonTableViewCellDelegate
+    func buttonCellButtonTapped(_ sender: ButtonTableViewCell) {
+        guard let task = sender.task else { return }
+        TaskController.shared.toggleIsCompleteFor(task: task)
+        tableView.reloadData()
     }
 }

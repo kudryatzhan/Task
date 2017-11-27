@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WU3-8F-zPo" customClass="ButtonTableViewCell" customModule="Task" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskListTableViewCell" id="WU3-8F-zPo" customClass="ButtonTableViewCell" customModule="Task" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WU3-8F-zPo" id="LiZ-OE-sRt">
@@ -45,6 +45,8 @@
                                                     <rect key="frame" x="321" y="0.0" width="22" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="vBd-KO-BkP" secondAttribute="height" multiplier="1:1" id="JS2-Vq-LrP"/>
+                                                        <constraint firstAttribute="height" constant="22" id="SJh-7y-OVK"/>
+                                                        <constraint firstAttribute="width" constant="22" id="ejf-xC-lHa"/>
                                                     </constraints>
                                                     <state key="normal" image="incomplete"/>
                                                     <connections>
